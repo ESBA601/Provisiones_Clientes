@@ -44,3 +44,6 @@ FECHA <- as.Date(FECHA,"%Y-%m-%d")
 
 ds <- as.numeric(FECHA1-FECHA)
 
+# SE ESTIMA LOS DIAS VENCIDOS 
+
+dcv <- mutate(CV, DIA_VEN_EST=DIAS_VENCIDOS+ds)
