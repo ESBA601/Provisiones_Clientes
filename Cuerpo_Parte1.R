@@ -55,6 +55,6 @@ dcv1 <- select(dcv, PRESTAMO, DIA_VEN_EST)
 
 tod02 <- left_join(tod01, dcv1, by="PRESTAMO")
 
-# SE AJUSTA LOS DIAS A CERO
+# SE AJUSTA LOS DIAS QUE TIENEN CERO EN FUERA DE PLAZO 
 
 tod02$DIA_VEN_EST <- ifelse(is.na(tod02$DIA_VEN_EST),0,tod02$DIA_VEN_EST)

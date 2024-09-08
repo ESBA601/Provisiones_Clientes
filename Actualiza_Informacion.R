@@ -20,7 +20,7 @@ tod0 <- read.delim(rf0, header = FALSE, sep = "©", dec = ",")
 
 # COLOCAR LA FECHA DEL PROXIMO CIERRE
 
-FECHA1 <- as.Date("2023-08-31","%Y-%m-%d")
+FECHA1 <- as.Date("2023-09-30","%Y-%m-%d")
 
 FECHA2 <- data.frame(FECHA1) 
 
